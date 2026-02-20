@@ -1,0 +1,97 @@
+<style>
+  :host {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin: 0 0 2rem 0;
+    opacity: 0.9;
+  }
+
+  .card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 2rem 3rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+
+  .tech-stack {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .badge {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  .api-status {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 0.875rem;
+  }
+
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.125rem;
+    }
+  }
+</style>
+
+<main>
+  <div class="card">
+    <h1>Hello World!</h1>
+    <p>Welcome to MarketPulse</p>
+
+    <div class="tech-stack">
+      <span class="badge">Angular 19</span>
+      <span class="badge">Go Fiber</span>
+      <span class="badge">GCP Cloud Run</span>
+    </div>
+
+    <div class="api-status">
+      API Status: <span id="api-status">Checking...</span>
+    </div>
+  </div>
+</main>
+
+<router-outlet />
