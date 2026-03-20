@@ -1,0 +1,13 @@
+{
+  "name": "AI-SDK-OPENAI",
+  "title": "OpenAI AgentOps Core",
+  "description": "Operational OpenAI agents with mission routing and safety gates",
+  "topics": [
+    "openai",
+    "agents",
+    "tool-calling",
+    "operations",
+    "python"
+  ],
+  "homepage": "https://mk-knight23.github.io/AI-SDK-OPENAI"
+}
