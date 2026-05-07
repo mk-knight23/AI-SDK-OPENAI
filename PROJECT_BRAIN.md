@@ -1,24 +1,25 @@
-# Project Brain: openai_agents
+# Project Brain: AI-SDK-OPENAI
 
 ## Purpose
-Implement Kazi's Agents Army mission routing on the openai_agents framework.
 
-## Core Mechanism
-- Receive mission text.
-- Route to primary + support agents via shared core router.
-- Convert routed mission into framework-native execution primitives.
+Operational OpenAI agents with mission routing and safety gates.
 
 ## Current State
-- Adapter skeleton implemented with optional imports.
-- Demo mission execution path available via `python runner.py`.
 
-## Production Plan
-- Configure provider keys via environment variables.
-- Add persistent memory/checkpoint backends where available.
-- Add eval, tracing, and latency/cost dashboards.
-- Add CI tests and deployment workflows.
+- Shared Agents Army routing and support-agent selection.
+- OpenAI Agent object creation path.
+- FastAPI health/run service and CLI runner.
+- Skill-aware mission plan and verification notes.
+- Dockerfile, CI workflow, pytest contract tests, and portfolio metadata.
 
-## Risks
-- Framework API drift across versions.
-- Inference cost growth under multi-agent fan-out.
-- Tool execution needs policy and approval guardrails.
+## Upgrade Direction
+
+- Wire Runner execution with configured model and tools.
+- Add safety gates for tool calls and external actions.
+- Add evals for mission quality, refusal behavior, and cost.
+
+## Quality Bar
+
+- Keep the repository runnable from a fresh clone.
+- Keep generated caches and local secrets out of git.
+- Keep README, skill matrix, tests, and CI aligned with actual behavior.
